@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server.js"
@@ -11,13 +11,18 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "prisma":{
-	"seed":"node prisma/seed.js"
+  "prisma": {
+    "seed": "node prisma/seed.js"
   },
   "devDependencies": {
     "prisma": "^4.7.1"
   },
   "dependencies": {
-    "@prisma/client": "^4.7.1"
+    "@fastify/cookie": "^8.3.0",
+    "@fastify/cors": "^8.2.0",
+    "@fastify/sensible": "^5.2.0",
+    "@prisma/client": "^4.7.1",
+    "dotenv": "^16.0.3",
+    "fastify": "^4.10.2"
   }
 }
